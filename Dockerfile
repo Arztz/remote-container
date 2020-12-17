@@ -1,7 +1,7 @@
 FROM node:14-slim as build
 RUN mkdir -p src/app
 WORKDIR src/app
-COPY package*.json .
+COPY package*.json ./
 RUN npm install
 COPY . .
 
